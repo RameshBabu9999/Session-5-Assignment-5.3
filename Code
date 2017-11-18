@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><h3>Adding & Deleting objects Properties.</h3></p>
+
+<p id="New"></p>
+
+<script>
+var student = {
+    firstname:"Ramesh",
+    DOB:'04-01-91',
+    skills:'Software Exposure, Good Athlete, Hard Working',
+    Address: {
+    	City: 'Vizag',
+    	State: 'Andhra Pradesh',
+    	Country: 'India',
+    	Pincode: '530003'
+    }
+    
+};
+student.mothername = "Lakshmi";
+student.eyecolor='black';
+delete student.DOB;
+document.getElementById("New").innerHTML =
+student.firstname + " Skills are " + student.skills + "& his mom name is" + student.mothername+ ".";
+
+</script>
+
+</body>
+</html>
